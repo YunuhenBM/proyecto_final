@@ -1,5 +1,16 @@
 #Proyecto final. Estructura propuesta:
 
-# Se usarán tres archivos .py : Uno para la función peliculas (que dará como resultado un string), otra para la función 
-# catálogo de películas y otra en donde se ejecutará el código general, utilizando 
-# los métodos anteriormente creados: agregar_pelicula, listar_pelicula y eliminar pelicula. 
+Se usarán tres archivos .py : 
+    1. *pelicula.py* Para definir la clase Película
+            Dará como resultado un string que representa el nombre de la peli
+            Tiene un argumento privado
+            Incluye un getter para acceder a los nombres con las otras funciones. 
+
+    2. *catalogo_pelicula* Para definir la clase CatalogoPelicula, 
+            Se crearán los archivos de texto aquí
+            Se definirán los métodos de agregar_pelicula, listar_pelicula y eliminar pelicula. 
+    
+    3. *principal.py* Es el archivo principal, en donde se ejecutará el programa.
+            Mostrará el menú de opciones
+            Llamará a los métodos creados
+            Permitirá al usuario interactuar con el código 
