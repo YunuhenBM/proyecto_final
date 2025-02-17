@@ -1,0 +1,5 @@
+#Proyecto final. Estructura propuesta:
+
+# Se usarán tres archivos .py : Uno para la función peliculas (que dará como resultado un string), otra para la función 
+# catálogo de películas y otra en donde se ejecutará el código general, utilizando 
+# los métodos anteriormente creados: agregar_pelicula, listar_pelicula y eliminar pelicula. 
