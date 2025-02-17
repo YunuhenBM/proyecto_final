@@ -14,7 +14,8 @@ class CatalogoPelicula:
             ruta_archivo = input("Ingrese un nombre válido")
         self.ruta_archivo = f"{ruta_archivo}.txt"
         #Con el while not nos aseguramos que el usuario ingrese el nombre válido, y no avanzará hasta que lo haga.
-    
+        #La línea 9 indica que validación sólo puede tener caracteres de la a-z o del 0-9 y guines bajo (_). El + indica 
+        #que no permite menos de un caracter como nombre.
     def agregar_pelicula(self, pelicula): #pelicula viene de la función pelicula.py
         """ Agrega una película al catálogo en el archivo de texto"""
         with open(self.ruta_archivo, "a") as file:
