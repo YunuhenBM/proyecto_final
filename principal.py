@@ -10,17 +10,17 @@ catalogo = CatalogoPelicula(nombre_cat, ruta)
 while True:
     #Creación del menú interactivo
     print("Menú de opciones 🎬")
-    print("1.  Agregar Película")
-    print("2. Listar Películas")
-    print("3. Eliminar catálogo de películas")
-    print("4. Salir")    
+    print("1.  Agregar Película🍿")
+    print("2. Listar Películas 📽️")
+    print("3. Eliminar catálogo de películas ⛔")
+    print("4. Salir 🙋‍♀️")    
 
     opcion = input("Seleccione una opción (1-4): ").strip()
 
     #Opción 1: 
     if opcion == "1":
         print("Ha elegido agregar una nueva película al catálogo 🍿")
-        nombre_pelicula = input("Ingrese el nombre de la película: ").strip()
+        nombre_pelicula = input("Ingrese el nombre de la película 📽️: ").strip()
         nueva_peli = Pelicula(nombre_pelicula) #Crea el objetivo tipo película
         catalogo.agregar_pelicula(nueva_peli)  # Agregar la película al catálogo
         print(f"La película {nombre_pelicula} ha sido agregada con éxito 💚")
@@ -31,7 +31,7 @@ while True:
         print("Ha elegido listar las películas 🎬")
         peliculas = catalogo.listar_peliculas() #Se obtiene la lista de películas 
         if peliculas:
-            print("\nPelículas en el catálogo: ")
+            print("\nPelículas en el catálogo 🍿: ")
             for i, peli in enumerate(peliculas, start=1):
                 print(f"{i}. {peli}")
         else:
@@ -42,7 +42,7 @@ while True:
     
     elif opcion == "3":
         print(f"Ha elegido eliminar el catálogo de películas '{nombre_cat}' 🚫") 
-        sure = input("¿Estás segura que deseas continuar? (S/N): ").strip().lower()
+        sure = input("¿Estás segura que deseas continuar? (S/N): 😯").strip().lower()
         if sure == "s":
             catalogo.eliminar_peliculas()
         elif sure =="n":
