@@ -8,7 +8,7 @@ Los tres archivos son:
             Tiene un argumento privado
             Incluye un getter para acceder a los nombres con las otras funciones. 
 
-    2. *catalogo_pelicula* Para definir la clase CatalogoPelicula, 
+    2. *catalogo_pelicula.py* Para definir la clase CatalogoPelicula, 
             Se crean los archivos de texto aquí
             Se definen los métodos de agregar_pelicula, listar_pelicula y eliminar pelicula. 
     
